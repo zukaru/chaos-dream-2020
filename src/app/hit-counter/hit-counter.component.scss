@@ -1,0 +1,158 @@
+body {
+  padding: -175px 0 0 0;
+}
+
+#modalWindow {
+  color: white;
+
+}
+
+// .icon {
+//   position: relative !important;
+//   overflow: hidden !important;
+//   display: inline-block !important;
+// }
+
+// /* The "shine" element */
+
+// .icon:after {
+
+//   // animation: shine 5s ease-in-out infinite;
+//   animation-fill-mode: forwards;
+//   content: "";
+//   position: absolute;
+//   top: -110%;
+//   left: -210%;
+//   width: 200%;
+//   height: 200%;
+//   opacity: 0;
+//   transform: rotate(30deg);
+
+//   background: rgba(255, 255, 255, 0.13);
+//   background: linear-gradient(
+//     to right,
+//     rgba(255, 255, 255, 0.13) 0%,
+//     rgba(255, 255, 255, 0.13) 77%,
+//     rgba(255, 255, 255, 0.5) 92%,
+//     rgba(255, 255, 255, 0.0) 100%
+//   );
+// }
+
+/* Hover state - trigger effect */
+
+
+/* Active state */
+
+/* .icon:active:after {
+  opacity: 0;
+} */
+
+@keyframes shine{
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: step-end;
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+  }
+}
+/* End Shine */
+
+label {
+  color: white;
+}
+
+
+form input {
+  margin: 15px;
+}
+
+button {
+  margin: 15px;
+  font-size: 15px;
+}
+
+select {
+  margin: 15px !important;
+}
+
+
+/* #first-row-a button{
+  // background-color: #ed553b;
+  background-color: #e15119;
+  color: white;
+}
+
+#first-row-b button{
+  // background-color: #ed553b;
+  background-color: #333333;
+  color: white;
+}
+
+#second-row button {
+  // background-color: #3caea3;
+  background-color: #2f4e6f;
+  color: white;
+}
+
+#third-row button {
+  // background-color: #f6d55c;
+  background-color: #c8d7e3;
+} */
+
+#message {
+  color: white;
+}
+
+@media (max-width: 548px) {
+  .nav-item .active {
+    background-color: #272323;
+    border-bottom-color: white;
+    color: white;
+}
+}
+
+@media (max-width: 767px) {
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+
+
+  }
+}
+@media (max-width: 767px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+
+  }
+}
+
+.btn {
+  background: #2a2a2a;
+  color: lightgray;
+  border: .5px solid orange;
+  box-shadow: 0px 0px 5px orange;
+  animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes buttonglow{
+  from {box-shadow: 0 0 5px orange;}
+  to {box-shadow: 0 0 25px orange;}
+}
+
+@keyframes glow {
+	0% {box-shadow: 0px 0px 15px orange;}
+  50% {box-shadow: 0px 0px 5px orange;}
+  100% {box-shadow: 0px 0px 15px orange;}
+  }
+

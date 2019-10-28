@@ -1,0 +1,85 @@
+<div class="container">
+  <div class="col-lg-12">
+  <div class="row" id="first-row-a">
+  <button class="btn icon" (click)="sureShotRoll()">Sure Shot</button>
+
+  <!-- Trigger the modal with a button -->
+<button type="button" class="btn icon" data-toggle="modal" data-target="#myModal">Mastery (Melee)</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content bg-dark" id="modalWindow">
+      <div class="modal-header">
+        <h4 class="modal-title">Mastery (Melee)</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <button class="btn icon mastery" (click)="masteryHighRoll()">High</button>
+        <button class="btn icon mastery" (click)="masteryMidRoll()">Mid</button>
+        <button class="btn icon mastery" (click)="masteryLowRoll()">Low</button>
+        <p id="modal-message"><span style="font-weight: bold">Results: </span> <span style="font-weight: bolder; font-size: 150%;">{{ masteryRng }}</span> {{ masteryMessage }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal End -->
+</div>
+<div class="row" id="first-row-b">
+  <button class="btn icon" (click)="trainedRoll()">Trained</button>
+  <button class="btn icon" (click)="unTrainedRoll()">Untrained (Thrown)</button>
+</div>
+
+   <div class="row" id="second-row">
+  <button class="btn icon" (click)="farShotRoll()">Far Shot</button>
+  <button class="btn icon" (click)="longShotRoll()">Long Shot</button>
+  </div>
+
+  <div class="row" id="third-row">
+  <button class="btn icon" (click)="vehicleRoll()">Vehicle</button>
+  <button class="btn icon" (click)="invertedHCRoll()">Inverted HC</button>
+  </div>
+
+</div>
+<p id="message"><span style="font-weight: bold">Results: </span>
+  <span style="font-weight: bolder;
+    font-size: 150%;">{{ rng }}</span> {{ message }}</p>
+<div class="container">
+  <div class="row">
+    <form class="form-inline "
+      (ngSubmit)="onSubmit(f)"
+      #f="ngForm"
+      required>
+      <label for="from-num">MIN</label>
+      <input
+        class="bg-light form-control icon"
+        type="number"
+        min="1"
+        max="15"
+        name="from-num"
+        required
+        [(ngModel)]="fromNum">
+        <label for="to-num">MAX</label>
+        <input
+        class="bg-light form-control icon"
+        type="number"
+        min="1"
+        max="15"
+        name="to-num"
+        required
+        [(ngModel)]="toNum">
+          <!-- <button
+            type="submit"
+            class="btn btn-success"
+            name="submit-button"
+            [disabled]="!f.valid">Ok
+          </button> -->
+      </form>
+    </div>
+  </div>
+ </div>
