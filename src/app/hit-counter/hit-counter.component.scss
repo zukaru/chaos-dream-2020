@@ -140,19 +140,25 @@ select {
 .btn {
   background: #2a2a2a;
   color: lightgray;
-  border: .5px solid orange;
-  box-shadow: 0px 0px 5px orange;
+  border: .5px solid darkorange ;
+  box-shadow: 0px 0px 5px darkorange;
   animation: glow 4s ease-in-out infinite;
 }
 
 @keyframes buttonglow{
-  from {box-shadow: 0 0 5px orange;}
-  to {box-shadow: 0 0 25px orange;}
+  from {box-shadow: 0 0 5px darkorange;}
+  to {box-shadow: 0 0 25px darkorange;}
 }
 
 @keyframes glow {
-	0% {box-shadow: 0px 0px 15px orange;}
-  50% {box-shadow: 0px 0px 5px orange;}
-  100% {box-shadow: 0px 0px 15px orange;}
+	0% {box-shadow: 0px 0px 15px darkorange;}
+  50% {box-shadow: 0px 0px 5px darkorange;}
+  100% {box-shadow: 0px 0px 15px darkorange;}
+  }
+
+
+  .bundle-form-buttons {
+    position: fixed;
+    bottom: 0;
   }
 
